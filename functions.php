@@ -130,11 +130,6 @@ require get_template_directory() . '/includes/template-tags.php';
 require get_template_directory() . '/includes/extras.php';
 
 /**
- * Load Jetpack compatibility file.
- */
-require get_template_directory() . '/includes/jetpack.php';
-
-/**
  * Load custom WordPress nav walker.
  */
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
