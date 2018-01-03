@@ -115,11 +115,3 @@ require get_template_directory() . '/includes/extras.php';
  * Load custom WordPress nav walker.
  */
 require get_template_directory() . '/includes/bootstrap-wp-navwalker.php';
-
-/**
- * Adds WooCommerce support
- */
-add_action( 'after_setup_theme', 'woocommerce_support' );
-function woocommerce_support() {
-	add_theme_support( 'woocommerce' );
-}
