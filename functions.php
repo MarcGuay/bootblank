@@ -136,11 +136,6 @@ require get_template_directory() . '/includes/template-tags.php';
 require get_template_directory() . '/includes/extras.php';
 
 /**
- * Customizer additions.
- */
-require get_template_directory() . '/includes/customizer.php';
-
-/**
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/includes/jetpack.php';
