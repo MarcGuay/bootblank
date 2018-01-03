@@ -5,11 +5,6 @@
  * @package _tk
  */
 
-/**
- * Set the content width based on the theme's design and stylesheet.
- */
-if ( ! isset( $content_width ) )
-	$content_width = 750; /* pixels */
 
 if ( ! function_exists( '_tk_setup' ) ) :
 /**
@@ -20,7 +15,7 @@ if ( ! function_exists( '_tk_setup' ) ) :
  * support post thumbnails.
  */
 function _tk_setup() {
-	global $cap, $content_width;
+	global $cap;
 
 	// This theme styles the visual editor with editor-style.css to match the theme style.
 	add_editor_style();
@@ -36,19 +31,6 @@ function _tk_setup() {
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	*/
 	add_theme_support( 'post-thumbnails' );
-
-	/**
-	 * Enable support for Post Formats
-	*/
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
-
-	/**
-	 * Setup the WordPress core custom background feature.
-	*/
-	add_theme_support( 'custom-background', apply_filters( '_tk_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-		) ) );
 	
 	/**
 	 * Make theme available for translation
