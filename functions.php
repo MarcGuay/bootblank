@@ -17,9 +17,6 @@ if ( ! function_exists( '_tk_setup' ) ) :
 function _tk_setup() {
 	global $cap;
 
-	// This theme styles the visual editor with editor-style.css to match the theme style.
-	add_editor_style();
-
 	/**
 	 * Add default posts and comments RSS feed links to head
 	*/
