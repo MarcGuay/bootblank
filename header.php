@@ -16,12 +16,12 @@
             <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
                 <?php bloginfo( 'name' ); ?>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu-container" aria-controls="main-menu-container" aria-expanded="false" aria-label="<?php _e('Toggle navigation', 'bootblank') ?>">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-menu-container" aria-controls="main-menu-container" aria-expanded="false" aria-label="<?php _e('Toggle navigation', 'bootblank') ?>">
                 <span class="navbar-toggler-icon"></span>
             </button>
         
-            <div id="main-menu-container" class="collapse navbar-collapse">
-                
+            <div id="main-menu-container" class="offcanvas offcanvas-end navbar-collapse">
+                <a href="#" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#main-menu-container" aria-controls="main-menu-container" aria-expanded="true" aria-label="Toggle navigation">×</a>
                 <?php wp_nav_menu(
                     array(
                         'theme_location'    => 'primary',
