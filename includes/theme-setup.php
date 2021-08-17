@@ -24,6 +24,11 @@ function bootblank_setup() {
     */
     add_theme_support( 'post-thumbnails' );
 
+    /*
+     * Let WP handle the title tag
+     */
+    add_theme_support( 'title-tag' );
+    
     /**
      * Make theme available for translation
      * Translations can be filed in the /languages/ directory
