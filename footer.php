@@ -3,10 +3,11 @@
     </div><!-- close .container -->
 </div><!-- close .main-content -->
 
-<footer id="colophon" class="site-footer" role="contentinfo">
+<footer id="site-footer">
     <div class="container">
         <div class="row">
-            <div class="site-footer-inner col-sm-12">
+            <div class="col-12">
+                Footer content placeholder
             </div>
         </div>
     </div>
